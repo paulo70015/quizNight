@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-gm-l81">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-m9-2l4" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCn-Mz-fSF">
+                                        <rect key="frame" x="166.5" y="186" width="42" height="71.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIh-Dc-ed9" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="617" width="359" height="42"/>
+                                        <color key="backgroundColor" red="0.15949761867523193" green="0.28955066204071045" blue="0.34395629167556763" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="JOGAR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VUV-hg-Lx8" kind="show" id="6ss-3w-MjM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-g5-Gyi">
+                                        <rect key="frame" x="8" y="273.5" width="359" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="FNV-D4-TCi"/>
+                                            <constraint firstAttribute="width" secondItem="cMN-g5-Gyi" secondAttribute="height" multiplier="359:120" id="xe0-wD-7CA"/>
+                                            <constraint firstAttribute="height" constant="120" id="ylj-gi-qWp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rfq-iw-PT6" userLabel="Quiz Night Logo">
+                                        <rect key="frame" x="67.5" y="50" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="4wi-Fx-zov"/>
+                                            <constraint firstAttribute="height" constant="128" id="EcJ-wj-R1m"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.74851452464788737" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rfq-iw-PT6" firstAttribute="centerX" secondItem="KHS-m9-2l4" secondAttribute="centerX" id="08h-P7-Ktc"/>
+                                    <constraint firstItem="cMN-g5-Gyi" firstAttribute="centerX" secondItem="WIh-Dc-ed9" secondAttribute="centerX" id="2mE-7s-nHC"/>
+                                    <constraint firstItem="sCn-Mz-fSF" firstAttribute="centerX" secondItem="KHS-m9-2l4" secondAttribute="centerX" id="72r-s2-9rr"/>
+                                    <constraint firstItem="WIh-Dc-ed9" firstAttribute="leading" secondItem="KHS-m9-2l4" secondAttribute="leading" constant="8" id="Lfy-m9-quy"/>
+                                    <constraint firstItem="sCn-Mz-fSF" firstAttribute="top" secondItem="rfq-iw-PT6" secondAttribute="bottom" constant="8" id="MyA-nS-TtZ"/>
+                                    <constraint firstItem="cMN-g5-Gyi" firstAttribute="top" secondItem="sCn-Mz-fSF" secondAttribute="bottom" constant="16" id="TUI-Ab-A1N"/>
+                                    <constraint firstItem="cMN-g5-Gyi" firstAttribute="centerY" secondItem="KHS-m9-2l4" secondAttribute="centerY" id="ein-P0-aCi"/>
+                                    <constraint firstAttribute="bottom" secondItem="WIh-Dc-ed9" secondAttribute="bottom" constant="8" id="fbX-K5-m5w"/>
+                                    <constraint firstItem="rfq-iw-PT6" firstAttribute="top" secondItem="KHS-m9-2l4" secondAttribute="top" constant="50" id="xiJ-eR-0cQ"/>
+                                    <constraint firstItem="cMN-g5-Gyi" firstAttribute="centerX" secondItem="KHS-m9-2l4" secondAttribute="centerX" id="yRU-uq-rsv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KHS-m9-2l4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6xE-Zd-l2k"/>
+                            <constraint firstItem="KHS-m9-2l4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="DKk-3x-rkg"/>
+                            <constraint firstItem="Zlf-gm-l81" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ITD-zI-OXP"/>
+                            <constraint firstItem="KHS-m9-2l4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="NlO-4x-pqF"/>
+                            <constraint firstItem="KHS-m9-2l4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ORa-mT-SaV"/>
+                            <constraint firstItem="Zlf-gm-l81" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eg2-7g-53f"/>
+                            <constraint firstItem="KHS-m9-2l4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jZV-os-Bg6"/>
+                            <constraint firstItem="Zlf-gm-l81" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="kEo-2w-DcC"/>
+                            <constraint firstItem="KHS-m9-2l4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mG5-WL-N2N"/>
+                            <constraint firstItem="Zlf-gm-l81" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ujG-Ya-IId"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="quizNightLogo" destination="rfq-iw-PT6" id="ecH-li-dXl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="134"/>
+        </scene>
+        <!--Questoes View Controller-->
+        <scene sceneID="9A6-7b-b49">
+            <objects>
+                <viewController id="VUV-hg-Lx8" customClass="QuestoesViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Pd-gj-JM6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="LBl-Dv-jRw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-Gr-tv1" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="gnh-Am-ol7" userLabel="cidade">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="374"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a Cidade?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLG-hh-ucX">
+                                        <rect key="frame" x="8" y="409" width="359" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="UTr-dU-YKK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eSO-xE-wGp">
+                                        <rect key="frame" x="0.0" y="459" width="375" height="198"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2x-Cz-zT4" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                                <color key="backgroundColor" red="0.15949761870000001" green="0.28955066200000001" blue="0.34395629170000003" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="4GB-gP-1Vj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="JOGAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="4GB-gP-1Vj"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="4GB-gP-1Vj"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao1Click:" destination="VUV-hg-Lx8" eventType="touchUpInside" id="Sdx-mj-qIk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-e0-xTv" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="52" width="375" height="42"/>
+                                                <color key="backgroundColor" red="0.15949761870000001" green="0.28955066200000001" blue="0.34395629170000003" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="zBY-w7-w4E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="JOGAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="zBY-w7-w4E"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="zBY-w7-w4E"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao2Click:" destination="VUV-hg-Lx8" eventType="touchUpInside" id="s8M-UB-Gsc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQl-z4-uAa" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="104" width="375" height="42"/>
+                                                <color key="backgroundColor" red="0.15949761870000001" green="0.28955066200000001" blue="0.34395629170000003" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="6xJ-4D-YLJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="JOGAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6xJ-4D-YLJ"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="6xJ-4D-YLJ"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao3Click:" destination="VUV-hg-Lx8" eventType="touchUpInside" id="jJG-7s-yDv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-Mz-4Bl" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="156" width="375" height="42"/>
+                                                <color key="backgroundColor" red="0.15949761870000001" green="0.28955066200000001" blue="0.34395629170000003" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="TDW-Zh-vcP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="JOGAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="TDW-Zh-vcP"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="TDW-Zh-vcP"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao4CLick:" destination="VUV-hg-Lx8" eventType="touchUpInside" id="o70-JU-3yy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.74851452460000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gnh-Am-ol7" firstAttribute="top" secondItem="ZKg-Gr-tv1" secondAttribute="top" id="3N3-VN-vsN"/>
+                                    <constraint firstItem="eSO-xE-wGp" firstAttribute="leading" secondItem="ZKg-Gr-tv1" secondAttribute="leading" id="430-7m-cib"/>
+                                    <constraint firstItem="TLG-hh-ucX" firstAttribute="centerX" secondItem="ZKg-Gr-tv1" secondAttribute="centerX" id="JHD-52-Vne"/>
+                                    <constraint firstItem="gnh-Am-ol7" firstAttribute="width" secondItem="ZKg-Gr-tv1" secondAttribute="width" id="JQR-kA-512"/>
+                                    <constraint firstItem="gnh-Am-ol7" firstAttribute="centerX" secondItem="ZKg-Gr-tv1" secondAttribute="centerX" id="Ll1-Vn-JZj"/>
+                                    <constraint firstAttribute="trailing" secondItem="eSO-xE-wGp" secondAttribute="trailing" id="ktH-bT-JFZ"/>
+                                    <constraint firstItem="eSO-xE-wGp" firstAttribute="top" secondItem="TLG-hh-ucX" secondAttribute="bottom" constant="20" id="mzh-3T-ouK"/>
+                                    <constraint firstAttribute="bottom" secondItem="eSO-xE-wGp" secondAttribute="bottom" constant="10" id="qow-ib-doz"/>
+                                    <constraint firstItem="TLG-hh-ucX" firstAttribute="top" secondItem="gnh-Am-ol7" secondAttribute="bottom" constant="35" id="quT-9d-svd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LBl-Dv-jRw" firstAttribute="height" secondItem="1Pd-gj-JM6" secondAttribute="height" id="2da-IY-Btq"/>
+                            <constraint firstItem="ZKg-Gr-tv1" firstAttribute="height" secondItem="1Pd-gj-JM6" secondAttribute="height" id="4Lk-GH-yI6"/>
+                            <constraint firstItem="LBl-Dv-jRw" firstAttribute="centerX" secondItem="1Pd-gj-JM6" secondAttribute="centerX" id="BnS-Bg-k4Y"/>
+                            <constraint firstItem="ZKg-Gr-tv1" firstAttribute="centerY" secondItem="1Pd-gj-JM6" secondAttribute="centerY" id="GdZ-Hz-ep4"/>
+                            <constraint firstItem="LBl-Dv-jRw" firstAttribute="centerY" secondItem="1Pd-gj-JM6" secondAttribute="centerY" id="Z2k-32-gvs"/>
+                            <constraint firstItem="ZKg-Gr-tv1" firstAttribute="centerX" secondItem="1Pd-gj-JM6" secondAttribute="centerX" id="bQr-cR-tsf"/>
+                            <constraint firstItem="ZKg-Gr-tv1" firstAttribute="centerX" secondItem="1Pd-gj-JM6" secondAttribute="centerX" id="fex-vW-z4s"/>
+                            <constraint firstItem="LBl-Dv-jRw" firstAttribute="width" secondItem="1Pd-gj-JM6" secondAttribute="width" id="mZN-H8-V1g"/>
+                            <constraint firstItem="ZKg-Gr-tv1" firstAttribute="width" secondItem="1Pd-gj-JM6" secondAttribute="width" id="p7J-7D-4qn"/>
+                            <constraint firstItem="ZKg-Gr-tv1" firstAttribute="centerY" secondItem="1Pd-gj-JM6" secondAttribute="centerY" id="tKJ-3t-j92"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s80-sg-YiM"/>
+                    </view>
+                    <connections>
+                        <outlet property="dicaImagem" destination="gnh-Am-ol7" id="WOO-6m-9GM"/>
+                        <outlet property="stackBotoes" destination="eSO-xE-wGp" id="hh7-L5-CXB"/>
+                        <segue destination="kcu-Ka-bcb" kind="show" identifier="fimDeJogo" id="0yY-bl-TFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0K1-Ru-Pf5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="134"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="CcO-4U-wbg">
+            <objects>
+                <viewController id="kcu-Ka-bcb" customClass="GameOverViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k0y-g1-yHS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="pH8-f9-3Xy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ble-V6-XqF" userLabel="retangulo" customClass="viewCo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZQ-Kh-7N2">
+                                        <rect key="frame" x="16" y="226" width="343" height="215"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="180"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fim de Jogo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-hs-H0g">
+                                        <rect key="frame" x="64" y="18" width="247" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pontos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-TP-CKi">
+                                        <rect key="frame" x="121" y="414" width="133" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbB-gV-2xd" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="617" width="375" height="42"/>
+                                        <color key="backgroundColor" red="0.15949761870000001" green="0.28955066200000001" blue="0.34395629170000003" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="ZrK-dk-v9U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Jogar Novamente">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ZrK-dk-v9U"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="ZrK-dk-v9U"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="KUQ-r2-2wt" kind="unwind" unwindAction="voltarInicio:" id="i9f-pV-9oj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.74851452460000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YMk-hs-H0g" firstAttribute="centerX" secondItem="Ble-V6-XqF" secondAttribute="centerX" id="54D-AM-5Qg"/>
+                                    <constraint firstItem="YMk-hs-H0g" firstAttribute="top" secondItem="Ble-V6-XqF" secondAttribute="top" constant="18" id="6IW-Da-eAO"/>
+                                    <constraint firstItem="4dt-TP-CKi" firstAttribute="centerX" secondItem="Ble-V6-XqF" secondAttribute="centerX" id="Xfr-xF-v2B"/>
+                                    <constraint firstItem="0ZQ-Kh-7N2" firstAttribute="leading" secondItem="Ble-V6-XqF" secondAttribute="leading" constant="16" id="gVE-m7-JfX"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ZQ-Kh-7N2" secondAttribute="trailing" constant="16" id="hRq-Y4-TFA"/>
+                                    <constraint firstItem="4dt-TP-CKi" firstAttribute="top" secondItem="0ZQ-Kh-7N2" secondAttribute="bottom" constant="-27" id="j7o-fU-u7R"/>
+                                    <constraint firstItem="0ZQ-Kh-7N2" firstAttribute="centerY" secondItem="Ble-V6-XqF" secondAttribute="centerY" id="lXo-W5-gor"/>
+                                    <constraint firstAttribute="bottom" secondItem="VbB-gV-2xd" secondAttribute="bottom" constant="8" id="sbf-EF-WOe"/>
+                                    <constraint firstAttribute="trailing" secondItem="VbB-gV-2xd" secondAttribute="trailing" id="sij-EJ-DJQ"/>
+                                    <constraint firstItem="VbB-gV-2xd" firstAttribute="leading" secondItem="Ble-V6-XqF" secondAttribute="leading" id="wVJ-T4-nud"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pH8-f9-3Xy" firstAttribute="width" secondItem="k0y-g1-yHS" secondAttribute="width" id="1Oh-Yl-nNe"/>
+                            <constraint firstItem="Ble-V6-XqF" firstAttribute="width" secondItem="k0y-g1-yHS" secondAttribute="width" id="1b1-Tl-kF7"/>
+                            <constraint firstItem="Ble-V6-XqF" firstAttribute="height" secondItem="k0y-g1-yHS" secondAttribute="height" id="2Xj-HG-bss"/>
+                            <constraint firstItem="Ble-V6-XqF" firstAttribute="centerX" secondItem="k0y-g1-yHS" secondAttribute="centerX" id="XSe-i9-uMK"/>
+                            <constraint firstItem="pH8-f9-3Xy" firstAttribute="centerX" secondItem="k0y-g1-yHS" secondAttribute="centerX" id="ZhU-Xd-V7X"/>
+                            <constraint firstItem="pH8-f9-3Xy" firstAttribute="centerY" secondItem="k0y-g1-yHS" secondAttribute="centerY" id="eNu-TP-nHV"/>
+                            <constraint firstItem="Ble-V6-XqF" firstAttribute="centerY" secondItem="k0y-g1-yHS" secondAttribute="centerY" id="ntH-9X-hDD"/>
+                            <constraint firstItem="pH8-f9-3Xy" firstAttribute="height" secondItem="k0y-g1-yHS" secondAttribute="height" id="x2i-sS-eRA"/>
+                            <constraint firstItem="Ble-V6-XqF" firstAttribute="centerY" secondItem="k0y-g1-yHS" secondAttribute="centerY" id="xh2-aZ-TCq"/>
+                            <constraint firstItem="Ble-V6-XqF" firstAttribute="centerX" secondItem="k0y-g1-yHS" secondAttribute="centerX" id="yg4-T5-ABx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vjx-Va-cTc"/>
+                    </view>
+                    <connections>
+                        <outlet property="pontuacaoLabel" destination="0ZQ-Kh-7N2" id="FWS-B4-nVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xB7-ad-89a" sceneMemberID="firstResponder"/>
+                <exit id="KUQ-r2-2wt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1024" height="682.5"/>
+        <image name="logo" width="426.5" height="307.5"/>
+    </resources>
+</document>
